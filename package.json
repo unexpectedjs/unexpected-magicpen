@@ -1,0 +1,37 @@
+{
+  "name": "unexpected-magicpen",
+  "version": "0.1.0",
+  "description": "MagicPen plugin for the Unexpected assertion library",
+  "main": "lib/unexpected-magicpen.js",
+  "scripts": {
+    "lint": "jshint .",
+    "test": "mocha && npm run lint",
+    "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text -- mocha --reporter dot && echo google-chrome coverage/lcov-report/index.html",
+    "prepublish": "browserify -p bundle-collapser/plugin -e lib/unexpected-magicpen -s unexpectedMagicPen > unexpected-magicpen.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unexpectedjs/unexpected-magicpen.git"
+  },
+  "keywords": [
+    "Unexpected",
+    "magicpen",
+    "assertion",
+    "style"
+  ],
+  "author": "Andreas Lind <andreas@one.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/unexpectedjs/unexpected-magicpen/issues"
+  },
+  "homepage": "https://github.com/unexpectedjs/unexpected-magicpen#readme",
+  "devDependencies": {
+    "browserify": "13.0.1",
+    "bundle-collapser": "1.2.1",
+    "coveralls": "2.11.9",
+    "mocha": "2.5.3",
+    "nyc": "6.4.4",
+    "unexpected": "unexpectedjs/unexpected#feature/unexpected-magicpen"
+  }
+}

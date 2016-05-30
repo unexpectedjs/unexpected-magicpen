@@ -1,0 +1,4 @@
+/coverage/
+/unexpected-magicpen.min.js
+/node_modules/
+/.nyc_output/
