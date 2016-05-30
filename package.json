@@ -8,7 +8,7 @@
     "test": "mocha && npm run lint",
     "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text -- mocha --reporter dot && echo google-chrome coverage/lcov-report/index.html",
-    "prepublish": "browserify -p bundle-collapser/plugin -e lib/unexpected-magicpen -s unexpectedMagicPen > unexpected-magicpen.min.js"
+    "prepublish": "browserify -p bundle-collapser/plugin -e lib/unexpected-magicpen -s weknowhow.unexpectedMagicPen > unexpected-magicpen.min.js"
   },
   "repository": {
     "type": "git",
