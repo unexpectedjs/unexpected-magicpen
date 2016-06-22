@@ -14,6 +14,10 @@ expect.addAssertion('<any> to inspect as <string>', function (expect, subject, v
 
 describe('magicpen type', function () {
     describe('#inspect', function () {
+        it('should inspect an empty MagicPen instance', function () {
+            expect(expect.output.clone().magicPen(expect.output.clone()).toString(), 'to equal', 'magicpen()');
+        });
+
         it('should find two pens with different formats to not to be identical', function () {
             var MagicPen = expect.output.constructor;
             expect(new MagicPen('text').text('foo'), 'not to equal', new MagicPen('ansi').text('foo'));
