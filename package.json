@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/unexpectedjs/unexpected-magicpen#readme",
   "devDependencies": {
-    "browserify": "13.0.1",
+    "browserify": "16.2.0",
     "bundle-collapser": "1.2.1",
     "coveralls": "2.11.9",
     "eslint": "2.13.1",
