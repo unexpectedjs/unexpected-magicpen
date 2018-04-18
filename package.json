@@ -37,7 +37,7 @@
     "eslint": "2.13.1",
     "eslint-config-onelint": "1.2.0",
     "mocha": "2.5.3",
-    "nyc": "6.4.4",
+    "nyc": "11.6.0",
     "unexpected": "10.37.5"
   }
 }
