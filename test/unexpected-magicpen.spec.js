@@ -35,15 +35,15 @@ describe('magicpen type', function () {
 
             it('should inspect correctly', function () {
                 expect(pen, 'to inspect as',
-                       "magicpen('text')        // abc\n" +
+                    "magicpen('text')        // abc\n" +
                        "  .green('abc').nl()    // deffoo\n" +
                        "  .text('def')          //    bar\n" +
-                       "  .block(function () {\n" +
-                       "    this\n" +
+                       '  .block(function () {\n' +
+                       '    this\n' +
                        "      .text('foo').nl()\n" +
                        "      .text('bar');\n" +
-                       "  })"
-                      );
+                       '  })'
+                );
             });
         });
 
@@ -54,13 +54,13 @@ describe('magicpen type', function () {
 
             it('should inspect correctly', function () {
                 expect(pen, 'to inspect as',
-                       "magicpen('ansi')\n" +
+                    "magicpen('ansi')\n" +
                        "  .green('abc')\n" +
                        "  .text('def')\n" +
-                       "  .block(function () {\n" +
+                       '  .block(function () {\n' +
                        "    this.text('foo');\n" +
-                       "  })"
-                      );
+                       '  })'
+                );
             });
         });
 
@@ -71,13 +71,13 @@ describe('magicpen type', function () {
 
             it('should inspect correctly', function () {
                 expect(pen, 'to inspect as',
-                       "magicpen('html')\n" +
+                    "magicpen('html')\n" +
                        "  .green('abc')\n" +
                        "  .text('def')\n" +
-                       "  .block(function () {\n" +
+                       '  .block(function () {\n' +
                        "    this.text('foo');\n" +
-                       "  })"
-                      );
+                       '  })'
+                );
             });
         });
     });
