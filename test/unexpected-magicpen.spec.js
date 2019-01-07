@@ -1,6 +1,6 @@
-var expect = require('unexpected');
-
-expect.use(require('../lib/unexpected-magicpen'));
+var expect = require('unexpected')
+    .clone()
+    .use(require('../lib/unexpected-magicpen'));
 
 expect.addAssertion('<any> to inspect as <string>', function (expect, subject, value) {
     expect(expect.inspect(subject).toString(), 'to equal', value);
