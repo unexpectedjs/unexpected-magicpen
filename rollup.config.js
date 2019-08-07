@@ -21,5 +21,15 @@ module.exports = [
             strict: false
         },
         plugins
+    },
+    {
+        input: pkg.main,
+        output: {
+            file: 'unexpected-magicpen.esm.js',
+            format: 'esm',
+            exports: 'named',
+            strict: false
+        },
+        plugins
     }
 ];

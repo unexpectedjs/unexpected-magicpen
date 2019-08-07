@@ -11,6 +11,7 @@
     "prepublishOnly": "rollup -c"
   },
   "files": [
+    "unexpected-magicpen.esm.js",
     "unexpected-magicpen.min.js",
     "lib"
   ],
