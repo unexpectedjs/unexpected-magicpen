@@ -5,8 +5,8 @@
   "main": "lib/unexpected-magicpen.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha && npm run lint",
-    "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)",
+    "test": "mocha",
+    "test:ci": "npm run coverage",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text -- mocha --reporter dot && echo google-chrome coverage/lcov-report/index.html",
     "prepublishOnly": "rollup -c"
   },
