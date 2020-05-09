@@ -33,7 +33,7 @@
   "homepage": "https://github.com/unexpectedjs/unexpected-magicpen#readme",
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "eslint": "^6.0.0",
+    "eslint": "^7.0.0",
     "eslint-config-onelint": "^4.0.0",
     "mocha": "^7.0.0",
     "nyc": "^15.0.0",
