@@ -64,7 +64,7 @@ describe('magicpen type', function () {
             });
         });
 
-        describe('with a pen in ansi format', function () {
+        describe('with a pen in html format', function () {
             var pen = expect.createOutput('html').green('abc').text('def').block(function () {
                 this.text('foo');
             });
