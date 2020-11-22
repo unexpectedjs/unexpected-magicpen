@@ -3,26 +3,25 @@ var expect = require('unexpected')
   .use(require('../lib/unexpected-magicpen'));
 
 expect
-  .addAssertion('<any> to inspect as <string>', function (
-    expect,
-    subject,
-    value
-  ) {
-    expect(expect.inspect(subject).toString(), 'to equal', value);
-  })
-  .addAssertion('<any> when delayed a little bit <assertion>', function (
-    expect,
-    subject
-  ) {
-    return expect.promise(function (run) {
-      setTimeout(
-        run(function () {
-          return expect.shift();
-        }),
-        1
-      );
-    });
-  });
+  .addAssertion(
+    '<any> to inspect as <string>',
+    function (expect, subject, value) {
+      expect(expect.inspect(subject).toString(), 'to equal', value);
+    }
+  )
+  .addAssertion(
+    '<any> when delayed a little bit <assertion>',
+    function (expect, subject) {
+      return expect.promise(function (run) {
+        setTimeout(
+          run(function () {
+            return expect.shift();
+          }),
+          1
+        );
+      });
+    }
+  );
 
 describe('magicpen type', function () {
   describe('#inspect', function () {
