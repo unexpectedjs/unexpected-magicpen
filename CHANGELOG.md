@@ -1,3 +1,24 @@
+### v3.0.0 (2020-11-22)
+
+#### Pull requests
+
+- [#35](https://github.com/unexpectedjs/unexpected-magicpen/pull/35) Upgrade eslint-config-standard to version 16.0.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#33](https://github.com/unexpectedjs/unexpected-magicpen/pull/33) Upgrade eslint-config-standard to version 15.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#29](https://github.com/unexpectedjs/unexpected-magicpen/pull/29) Upgrade eslint-plugin-mocha to version 8.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#25](https://github.com/unexpectedjs/unexpected-magicpen/pull/25) Upgrade eslint-plugin-mocha to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#23](https://github.com/unexpectedjs/unexpected-magicpen/pull/23) Upgrade rollup to version 2.0.3 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#21](https://github.com/unexpectedjs/unexpected-magicpen/pull/21) Upgrade mocha to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#20](https://github.com/unexpectedjs/unexpected-magicpen/pull/20) Upgrade nyc to version 15.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Add CHANGELOG.md + offline-github-changelog integration](https://github.com/unexpectedjs/unexpected-magicpen/commit/bc0514fb4440b52bf09e68a8ace01c62a648dc0e) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update mocha to ^8.2.1](https://github.com/unexpectedjs/unexpected-magicpen/commit/6027e667a7b4d1b6a0da7dfee500a4009f04b9bb) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update eslint to ^7.14.0](https://github.com/unexpectedjs/unexpected-magicpen/commit/ac7376b67b0278eb9e1fe0f4c22513644486de58) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Drop node.js 8 support, add 14, lint with 14 \(semver-major\)](https://github.com/unexpectedjs/unexpected-magicpen/commit/606755a90eec7f3fb9a8f54b9eef0b2b0ac406e8) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update unexpected to ^12.0.0](https://github.com/unexpectedjs/unexpected-magicpen/commit/04ed4a70809d6a18e876df1718c67bef156e1b3b) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [+4 more](https://github.com/unexpectedjs/unexpected-magicpen/compare/v2.1.0...v3.0.0)
+
 ### v2.1.0 (2019-08-25)
 
 - [#19](https://github.com/unexpectedjs/unexpected-magicpen/pull/19) ESM build ([Alex J Burke](mailto:alex@alexjeffburke.com))
