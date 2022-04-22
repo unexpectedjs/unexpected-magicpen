@@ -1,4 +1,4 @@
-var expect = require('unexpected')
+const expect = require('unexpected')
   .clone()
   .use(require('../lib/unexpected-magicpen'));
 
@@ -34,7 +34,7 @@ describe('magicpen type', function () {
     });
 
     it('should find two pens with different formats to not to be identical', function () {
-      var MagicPen = expect.output.constructor;
+      const MagicPen = expect.output.constructor;
       expect(
         new MagicPen('text').text('foo'),
         'not to equal',
@@ -43,7 +43,7 @@ describe('magicpen type', function () {
     });
 
     it('should find two format-less pens with the same contents to be identical', function () {
-      var MagicPen = expect.output.constructor;
+      const MagicPen = expect.output.constructor;
       expect(
         new MagicPen().text('foo'),
         'to equal',
@@ -52,7 +52,7 @@ describe('magicpen type', function () {
     });
 
     describe('with a pen in text format', function () {
-      var pen = expect
+      const pen = expect
         .createOutput('text')
         .green('abc')
         .nl()
@@ -78,7 +78,7 @@ describe('magicpen type', function () {
     });
 
     describe('with a pen in ansi format', function () {
-      var pen = expect
+      const pen = expect
         .createOutput('ansi')
         .green('abc')
         .text('def')
@@ -101,7 +101,7 @@ describe('magicpen type', function () {
     });
 
     describe('with a pen in html format', function () {
-      var pen = expect
+      const pen = expect
         .createOutput('html')
         .green('abc')
         .text('def')
